@@ -13,3 +13,16 @@ header span{
 h1,h2{
     color: #800080FF;
 }
+a{
+    text-decoration: none;
+    color: #FF0000FF;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2::first-letter{
+    font-size: 1.5em;
+}
+dt{
+    color: #FFFF00FF;
+}
