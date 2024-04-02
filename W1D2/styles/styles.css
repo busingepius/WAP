@@ -1,0 +1,15 @@
+*{
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    font-family: "Arial", Arial Black, Verdana, Trebuchet MS, Georgia, Tahoma, Courier New, Times New Roman, serif;
+}
+.mood{
+    height: 150px;
+    width: 150px;
+}
+header span{
+    color: #FFFF00FF;
+}
+h1,h2{
+    color: #800080FF;
+}
