@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    padding: 5px 10px;
+}
+nav .logo{
+    color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#title{
+  margin-left: 10px;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+}
+.more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40%;
+}
+.more> p{
+    margin-left: 30px;
+}
+.vertical-divider {
+    height: 30px;
+    display: inline-block;
+    width: 2px;
+    border: solid 1px grey;
+    margin-left: 10px;
+}
+
+.main-title {
+    height: 100px;
+    width: 100vw;
+    background-color: #115156;
+    align-content: center;
+    color: white;
+    text-align: center;
+}
+
+main {
+    height: calc(100vh - 100px - 30px - 50px);
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    align-items: flex-start;
+}
+
+.section-login {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 40vw;
+    height: auto;
+}
+
+.azure-btn {
+    height: 30px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.azure-btn img {
+    width: 20%;
+    height: 30px;
+    margin: 1px auto;
+}
+
+.section-submit-ticket {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 40vw;
+    height: auto;
+}
+
+h4 {
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-line {
+    margin-top: 15px;
+    height: 1px;
+    width: 100%;
+    border: solid 1px black;
+}
+
+#divider {
+    width: 300px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.forgot-details {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+}
+.email{
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+
+.password {
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+input::placeholder{
+    color: grey;
+}
+
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+.checkbox input{
+    margin-right: 5px;
+}
+
+.forgot-details > h4 {
+    margin-left: 295px;
+}
+.btn{
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    font-size: 20px
+}
+
+
+.login.vertical-divider {
+    margin-top: 20px;
+    height: 90%;
+    display: inline-block;
+    width: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: grey;
+}
+span{
+    color: deepskyblue;
+}
+.section-submit-ticket{
+    width: 30vw;
+}
+.submit-btn{
+    height: 30px;
+    margin-top: 15px;
+    padding: 2px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    border-color: transparent;
+}
+footer {
+    background-color: #e6e6e6;
+    height: 30px;
+    width: 100vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.footer p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+.validators{
+    position: fixed;
+    bottom:50px;
+    left:5px;
+}
+
