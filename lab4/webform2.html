@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIU || FORMS</title>
+    <meta name="author" content="businge pius">
+    <meta name="description" content="forms, validations, css, html">
+    <meta name="viewport" content="width=device-width, initial-size=1.0">
+    <link type="text/css" href="./css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <h1>MUM Golden Dom Market ::: SRM System</h1>
+        <hr>
+        <a href="#">products</a>
+        <hr>
+        <a href="#">suppliers</a>
+    </div>
+    <div class="sign-out">
+        <p>Hello!</p>
+        <button class="btn">Sign Out</button>
+    </div>
+</nav>
+<main>
+    <h2 class="miu-form">New Product Form</h2>
+    <section>
+        <article>
+            <form action="#" method="post" class="new-product">
+                <section>
+                    <div class="product-number">
+                        <label for="product-number">
+                            Product Number
+                            <input type="text" id="product-number">
+                        </label>
+                    </div>
+                    <div class="first-name">
+                        <label for="Name">
+                            Name
+                            <input type="text" id="Name">
+                        </label>
+                    </div>
+                    <div class="unit-price">
+                        <label for="unit-price">
+                            Email address
+                            <input type="email" id="unit-price" placeholder="0.0">
+                        </label>
+                    </div>
+
+                </section>
+                <section>
+                    <div class="quantity-in-stock">
+                        <label for="quantity-in-stock">
+                            Quantity in stock
+                            <input type="text" id="quantity-in-stock" placeholder="0">
+                        </label>
+                    </div>
+                    <div class="supplier">
+                        <label for="supplier">
+                            Supplier
+                            <input type="text" id="supplier" placeholder="select a supplier">
+                        </label>
+                    </div>
+                    <div class="date-supplied">
+                        <label for="date-supplied">
+                            Date supplied
+                            <input type="date" id="date-supplied" placeholder="yyyy-mm-dd">
+                        </label>
+                    </div>
+                    <div id="btns">
+                        <button type="submit" class="new-product-btn reset">Reset</button>
+                        <button type="submit" class="new-product-btn cancel">Cancel</button>
+                        <button type="submit" class="new-product-btn add-product">Add Product</button>
+                    </div>
+                </section>
+            </form>
+        </article>
+    </section>
+</main>
+</body>
+</html>

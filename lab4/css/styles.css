@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h2:not(.miu-form) {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.miu-form {
+    margin-top: 25px;
+    margin-left: 15%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: deepskyblue;
+    padding: 14px 10px;
+}
+
+h1 {
+    margin-right: 50px;
+}
+
+hr {
+    height: 100%;
+    margin: 1px 50px;
+    border: solid 1px white;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+p {
+    align-self: center;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+nav > div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 40px;
+    color: white;
+}
+
+
+form:not(.new-product) {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20%;
+}
+
+form:is(.new-product) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 20%;
+}
+.new-product > section{
+    width: 100%;
+    padding: 0 10px;
+}
+label {
+    color: black;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    margin-top: 10px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 10px;
+    color: darkgrey;
+    font-size: 18px;
+    border-width:0;
+}
+
+input::placeholder {
+    color: darkgrey;
+}
+
+button[type=submit]:not(.new-product-btn) {
+    background-color: blue;
+    width: 100px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+.new-product-btn{
+    background-color:transparent ;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+.add-product{
+    color: blue;
+    border: solid 1px blue;
+}.reset{
+    color: darkslateblue;
+    border: solid 1px darkslateblue;
+}.cancel{
+    color: red;
+    border: solid 1px red;
+}
+#btns{
+    display:flex;
+    flex-direction:row;
+    justify-content: end;
+}

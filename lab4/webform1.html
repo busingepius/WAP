@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMS AND VALIDATION</title>
+    <meta name="author" content="businge pius">
+    <meta name="description" content="forms, validations, css, html">
+    <meta name="viewport" content="width=device-width, initial-size=1.0">
+    <link type="text/css" href="./css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+    <h2>Forms and Validators</h2>
+    <section>
+        <article>
+            <form action="./webform2.html" method="post">
+                <div class="url">
+                    <label for="url">
+                        Website URL
+                        <input type="url" pattern="(http\:\/\/|https\:\/\/).+" required id="url" name="url" placeholder="Website URL" title="must be http:// or https://"  >
+                    </label>
+                </div><div class="first-name">
+                    <label for="first-name">
+                        First Name
+                        <input type="text" pattern="^([A-Z]{1,}).{2,}" title="start with capital leter and more than 2" id="first-name" name="first-name" placeholder="First name" required>
+                    </label>
+                </div><div class="email-address">
+                    <label for="email-address">
+                        Email address
+                        <input type="email"  id="email-address" name="email-address" placeholder="Enter email address" required>
+                    </label>
+                </div>
+                <div class="password">
+                    <label for="password">
+                        Password
+                        <input type="text" id="password" name="password" required placeholder="password" title="must be atleast 10 characters" pattern="\w{10,}">
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </section>
+</main>
+</body>
+</html>
