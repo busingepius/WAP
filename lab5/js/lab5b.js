@@ -7,8 +7,9 @@
  */
 
 function computeSumOfSquares(numbers) {
-    return numbers.map((number) => Math.pow(number, 2)).reduce((a, n) =>
-        n + a
+    return numbers.map((number) => Math.pow(number, 2)).reduce(function (a, n) {
+            return n + a
+        }, 0
     );
 }
 
@@ -116,7 +117,9 @@ function getTitles(libraryBooks) {
 console.log(getTitles(libraryBooks));
 
 function findBooks(title) {
-    return libraryBooks.filter((book) => book.title.includes(title)).sort((book) => book.title);
+    return libraryBooks
+        .filter((book) => book.title.includes(title))
+        .sort((bookA,bookB) => bookA.title.localeCompare(bookB.title));
 }
 
 console.log(findBooks("A"));
