@@ -56,7 +56,7 @@ let user1 = {
     lastname: "Smith",
     display: function () {
         console.log(str, this.firstName);
-        show.call("hi");
+        show("hi");
         // show.call(this,"hi");// correct way
     }
 };
