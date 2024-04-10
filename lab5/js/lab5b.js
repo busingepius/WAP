@@ -78,9 +78,9 @@ print(4, 0, 1);
 
 let user = {name: "Pius", years: 30};
 const {name, years: age, isAdmin = false} = user;
-alert(name);
-alert(age);
-alert(isAdmin);
+// alert(name);
+// alert(age);
+// alert(isAdmin);
 
 /**
  * 3. let libraryBooks = [
@@ -123,3 +123,6 @@ function findBooks(title) {
 }
 
 console.log(findBooks("A"));
+
+let key = prompt("What do you want to know about the user?", "name");
+alert( user[key] ); // John
