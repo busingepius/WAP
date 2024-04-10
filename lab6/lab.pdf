@@ -1,0 +1,69 @@
+QUESTION ONE
+(a) Console logs
+	undefined
+	8
+	8
+	9
+	10
+	undefined
+
+(b)
+	GEC: creation
+	LE: {a: undefined, b: undefined, c: undefined, outer} tdz:{x}
+
+	GEC: execution
+	LE: {x: undefined, a: 5, b : 10, c : fn, outer: null}
+
+	c FEC: creation
+	LE: {arguments: {0:8, 1:9, 2:10, length: 3}, a: 8, b: 9, c: 10, f: undefined, x: undefined, outer: global}
+
+	c FEC: execution
+	LE: {arguments: {0:8, 1:9, 2:10, length: 3}, a: 8, b: 9, c: 10, f: fn, x: 10, outer: global}
+
+	f FEC: creation
+	LE: {arguments: {0:8, 1:9, 2: 10, length: 3}, a: 8, b: 9, c: 10, x: undefined, outer: c}
+
+	f FEC: execution
+	LE: {arguments: {0:8, 1:9, 2: 10, length: 3}, a: 8, b: 10, c: 10, x: 5, outer: c}
+
+
+QUESTION TWO
+(a)	Console logs
+	81
+	25
+
+
+(b)
+	GEC: creation
+	LE: {x: undefined, myFunction: fn, outer: null}
+
+	GEC: creation
+	LE: {x: 9, myFunction: fn, outer: null}
+
+	myFunction FEC: creation
+	LE: {arguments: {length: 0}, x: 9, outer: global}
+
+	myFunction FEC: execution
+	LE: {arguments: {length: 0},x: 9, outer: global}
+
+	myFunction FEC: creation
+	LE: {arguments: {length: 0}, x: 5, outer: global}
+
+	myFunction FEC: execution
+	LE: {arguments: {length: 0}, x: 5, outer: global}
+
+QUESTION THREE
+(a) alert(10)
+
+(b)
+	GEC: creation
+	LE: {foo: undefined, bar: fn, outer: null}
+
+	GEC: execution
+	LE: {foo: 1, bar: fn, outer: null}
+
+	bar FEC: creation
+	LE: {arguments: {length: 0}, foo: undefined, outer global}
+
+	bar FEC: execution
+	LE: {arguments: {length: 0}, foo: 10, outer global}
