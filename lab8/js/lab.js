@@ -53,7 +53,7 @@ Array.prototype.mySort = function () {
     })
 }
 
-Object.setPrototypeOf(arr, Array.prototype);
+// Object.setPrototypeOf(arr, Array.prototype);
 console.log(arr.mySort())
 
 function Animal(n, s) {
