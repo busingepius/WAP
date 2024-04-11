@@ -19,14 +19,16 @@ let person2 = new Person("Anna", "Anna");
 function Employee( f, l,s) {
     Person.call(this, f, l);
     this.salary = s;
+    function display () {
+        return `${this.fname} ${this.lname} ${this.salary}`
+    }
 }
 
-Employee.prototype.display = function () {
-    return `${this.fname} ${this.lname} ${this.salary}`
-}
+// Employee.prototype.display = function () {
+//     return `${this.fname} ${this.lname} ${this.salary}`
+// }
 
 Employee.compare = function (e1, e2) {
-    console.log(e1.salary);
     return e1.salary - e2.salary;
 }
 
@@ -42,6 +44,7 @@ let emp3 = new Employee("Tom", "Jerry", 98000);
 let arr = [emp1, emp2, emp3];
 arr.sort(Employee.compare);
 console.log(arr);
+console.log(person1.display())
 
 let a = Employee.compare( emp1, emp2);
 console.log(a)
