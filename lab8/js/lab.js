@@ -18,6 +18,7 @@ student.insertGrade(4)
 student.insertGrade(5)
 console.log(student.computeAverageGrade());
 
+// QUESTION TWO
 function Student(f, l, g) {
     this.firstName = f;
     this.lastName = l;
@@ -79,7 +80,8 @@ Rabbit.prototype.run = function () {
 
 let animal = new Animal("animal", 120)
 let rabbit = new Rabbit("rabbit", 230)
+let rabbit2 = new Rabbit("rabbit2", 2330)
 
 Object.setPrototypeOf(Rabbit, Animal)
 Object.setPrototypeOf(Rabbit.prototype, Animal.prototype)
-console.log(rabbit.run())
+console.log([rabbit,rabbit2].sort(Animal.compareBySpeed))
