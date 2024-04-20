@@ -4,7 +4,7 @@
 Local module with require function and module.exports.
 Built-in modules:
 path, url
-fs: readFileSync, writeFileSync, readFile, writeFile, createWriteStream, createReadStrem, pipe
+fs: readFileSync, writeFileSync, readFile, writeFile, createWriteStream, createReadStream, pipe
 http: req: url, method, headers, res: writeHead, setHeader, write, end
  */
 
