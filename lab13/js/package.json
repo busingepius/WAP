@@ -1,0 +1,22 @@
+{
+  "name": "wap",
+  "version": "1.0.0",
+  "description": "WAP COURSE BACKEND DEV",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/busingepius/WAP\""
+  },
+  "keywords": [
+    "wap"
+  ],
+  "author": "businge pius",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

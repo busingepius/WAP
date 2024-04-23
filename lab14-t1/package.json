@@ -1,0 +1,21 @@
+{
+  "name": "lab14-t1",
+  "version": "1.0.0",
+  "description": "trying my own backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "BACKEND"
+  ],
+  "author": "businge pius",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

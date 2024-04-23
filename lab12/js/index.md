@@ -9,7 +9,7 @@ http: req: url, method, headers, res: writeHead, setHeader, write, end
  */
 
 /**
- * Question2: What will be outputs when we execute app.js?
+ * Question2: What will be outputs when we execute index.js?
  * */
 
     // pattern.js
@@ -29,7 +29,7 @@ exports.getDate = function () {
 };
 
 
-// app.js
+// index.js
 
 const person = require('./pattern');
 

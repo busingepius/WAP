@@ -9,6 +9,7 @@
  */
 
 const http = require('http');
+const fs = require('fs');
 const server = http.createServer();
 
 server.on('request', function (req, res) {
@@ -16,20 +17,23 @@ server.on('request', function (req, res) {
         res.writeHead(200, {'Content-Type': 'text/plain'});
         res.write('Welcome to my website!');
         res.end();
-    } else if(req.method === "GET" && req.url === "/pdf"){
-        res.writeHead(200,{"Content-Type":"application/pdf"})
-        res.end();
+    } else if (req.method === "GET" && req.url === "/pdf") {
+        res.writeHead(200, {"Content-Type": "application/pdf"})
+        const readFile = fs.readFileSync("../lab12/js/question3/lesson12-2HTTP.pdf");
+        res.end(readFile);
 
     } else if (req.method === "GET" && req.url === "/about") {
-        res.writeHead(200,{"Content-Type":"application/plain"})
+        res.writeHead(200, {"Content-Type": "text/plain"})
+        const readFile = fs.readFileSync("./lab.txt");
+        res.write(readFile);
         res.end();
 
     } else if (req.method === "GET" && req.url === "/image") {
-        res.writeHead(200,{"Content-Type":"application/jpg"})
-        res.end();
+        res.writeHead(200, {"Content-Type": "image/jpg"})
+        const readFile = fs.readFileSync("../lab12/js/question3/image_lab12.jpg");
+        res.end(readFile);
 
-    }
-    else {
+    } else {
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.write("Page not found");
         res.end();
